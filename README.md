@@ -11,6 +11,22 @@ Just download all files into your mpv'config folder!
 
 Remember to back you original `osc.conf` file.
 
-(It is not compatible with other `osc-like` files.)
+It is not compatible with other `osc-like` lua files. （e.g. delete the original <s>mpv_thumbnail_script_client_osc.lua</s>）
 
 You should add `osc=no` and `load-scripts=yes` in your `mpv.conf`
+
+```
+File Tree
+    ...\mpv\portable_config\
+        mpv.conf
+
+    ...\mpv\portable_config\scripts\
+            osc_mod.lua
+            mpv_thumbnail_script_server.lua
+            mpv_thumbnail_script_server-1.lua
+            mpv_thumbnail_script_server-2.lua (more 'server' will speed up but higher usage of CPU)
+
+    ...\mpv\portable_config\script-opts\
+            osc.conf
+            mpv_thumbnail_script.conf
+```
